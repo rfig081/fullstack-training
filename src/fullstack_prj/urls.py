@@ -30,4 +30,6 @@ urlpatterns = [
     # path('formpage/', views.form_name_view, name='form_name'),
     # path('templates_app/', include('templates_app.urls')),
     path('auth_app/', include('auth_app.urls')),
+    path('logout/', views.user_logout, name='logout'),
+    path('special/', views.special, name='special'),
 ]
