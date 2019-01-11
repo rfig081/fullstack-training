@@ -20,16 +20,18 @@ from django.conf.urls import include
 # from first_app import views
 # from forms_app import views
 # from templates_app import views
-from auth_app import views
+# from auth_app import views
+from cbv_app import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.IndexView.as_view()),
     path('admin/', admin.site.urls),
     
     # path('first_app/', include('first_app.urls')),
     # path('formpage/', views.form_name_view, name='form_name'),
     # path('templates_app/', include('templates_app.urls')),
-    path('auth_app/', include('auth_app.urls')),
-    path('logout/', views.user_logout, name='logout'),
-    path('special/', views.special, name='special'),
+    # path('auth_app/', include('auth_app.urls')),
+    # path('logout/', views.user_logout, name='logout'),
+    # path('special/', views.special, name='special'),
+    path('cbv_app/', include('cbv_app.urls'), name='cbv_app'),
 ]

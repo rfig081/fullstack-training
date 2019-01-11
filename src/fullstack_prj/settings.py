@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'forms_app',
     'templates_app',
     'auth_app',
+    'cbv_app',
 ]
 
 MIDDLEWARE = [
